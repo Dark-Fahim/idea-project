@@ -204,3 +204,61 @@ hr{
     border-radius: 5px;
     margin-right: 5px;
 }
+/*-----------------------------------------------------
+------------------ media query styles -----------------
+------------------------------------------------------*/
+/* mobile styles added */
+@media only screen and (max-width: 520px) {
+    .header-section{
+        width: 95%;
+    }
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .blog, .course{
+        width: 95%;
+        margin-top: 25px;
+    }
+}
+/* tablet styles added */
+@media only screen and (min-width: 521px) and (max-width: 788px) {
+    .header-section{
+        width: 100%;
+    }
+    .container{
+        width: 97%;
+        margin: 0 auto;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+    }
+    .courses{
+        display: flex;
+        flex-direction: column;
+    }
+    .course{
+        height: auto;
+        width: auto;
+    }
+    .course img{
+        
+        width: 75%;
+        height: 50%;
+    }
+}
+/* special styles added */
+@media only screen and (min-width: 789px) and (max-width: 870px) {
+    .header-section{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }   
+}
