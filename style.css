@@ -231,13 +231,17 @@ hr{
         width: 100%;
     }
     .container{
-        width: 97%;
+        width: 100%;
         margin: 0 auto;
     }
     .players{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 30px;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
     .courses{
         display: flex;
@@ -260,5 +264,6 @@ hr{
     }
     .container{
         width: 100%;
+        flex-wrap: wrap;
     }   
 }
